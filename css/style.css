@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    position: relative;
+}
+
+header img.dinosaures {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+header img.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 700px;
+}
+
+header nav {
+    position: fixed;
+    color: white;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 50%;
+    padding: 10px;
+}
+
+header img.climatise {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    border: solid 1px white;
+}
+button{
+    background-color: #1c5f81;
+    color: white;
+    border: solid 1px transparent;    
+    padding: 10px 15px;
+    cursor: pointer;
+}
+button a{
+    border: none
+}
+button:hover{    
+    border: solid 1px white;
+}
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+main div.reservation {
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main div.reservation h1 {
+    text-align: center;
+}
+
+main div.reservation p.bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+main div.reservation button {
+    background-color: #1c5f81;
+    text-decoration: none;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    /* font-size: 5px; */
+    text-align: center;
+    width: 6rem;
+    align-self: center;
+}
+/* media1 */
+
+@media screen and (max-width: 1200px) {
+    header img.logo {
+        width: 500px;
+        transition: ease all 0.5s;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    header img.climatise {
+        width: 20rem;
+        transition: ease all 0.5s;
+    }
+}
+/* media2 */
+@media screen and (max-width: 750px) {
+    header img.logo {
+        width: 500px;
+        transition: ease all 0.5s;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main div.reservation {
+        width: 100%;
+    }
+
+    header img.climatise {
+        width: 15rem;
+        transition: ease all 0.5s;
+    }
+}
+/* media3 */
+@media screen and (max-width: 500px) {
+    header img.logo {
+        width: 450px;
+        transition: ease all 0.5s;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main div.reservation {
+        width: 100%;
+    }
+
+    header img.climatise {
+        width: 15rem;
+    }
+}
